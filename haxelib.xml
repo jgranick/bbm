@@ -1,0 +1,6 @@
+<project name="remote-control" url="http://github.com/haxenme/remote-control" license="MIT">
+	<user name="elyon"/>
+	<user name="elsassph"/>
+	<description>Add support for remote control input</description>
+    <version name="1.01">Renamed "LONG_PRESS" to "HOLD", added code for PLAY_PAUSE_HOLD</version>
+</project>
