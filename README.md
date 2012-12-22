@@ -21,7 +21,7 @@ Working locally, you can also use <include path="to/your/bbm/dev/directory" /> i
 
 Ordinarily, all of this works fine using NME 3.4.4, but BBM and some other BlackBerry system APIs are a little bit special... instead of working in full isolation, they need to be hooked into the event loop of your project in order to receive the required system messages.
 
-NME 3.4.4 does not make it possible to hook into the event loop, but the current development builds of NME have exposed this functionality. Under "project/BBM.cpp" you may see the call, "nme_register_bps_event_handler". This method exists in the development builds of NME to allow BlackBerry-specific native extensions to register a handler to receive these events.
+NME 3.4.4 does not make it possible to hook into the event loop, but NME 3.5.0 was just released, and exposes this functionality. Under "project/BBM.cpp" you may see the call, "nme_register_bps_event_handler". This method exists in the development builds of NME to allow BlackBerry-specific native extensions to register a handler to receive these events.
 
-I believe NME may be currently hard-coded to only allow one handler. A little help to make that allow lists of handlers would also be nice.
+I believe NME may be currently hard-coded to only allow one handler. A little help to make that allow lists of handlers would be great.
 
